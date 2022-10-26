@@ -64,7 +64,7 @@ function ActiveNav(){
 		for (var i = 0; i < elements.length; i++) {
 			const element_position = elements[i].getBoundingClientRect();
 			const pos = element_position.top;
-				if (pos <= window.innerHeight/4){
+				if (pos <= window.innerHeight){
 					var links = document.getElementById("navbar__list").querySelectorAll('li');
 					links[i].className += " active";
 		};
