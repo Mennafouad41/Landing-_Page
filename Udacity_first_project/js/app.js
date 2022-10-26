@@ -31,11 +31,9 @@ document.addEventListener('DOMContentLoaded', ActiveNav, false);
 // Start build the Navigation_Bar
 function navigation_bar_func(){
         arr_sections.forEach(section => {
-        //Create the li elements 
         const navigation_button = document.createElement('li');
         //Insert the html text to the li
         navigation_button.insertAdjacentHTML("afterbegin",`<a href="#${section.id}" class="menu__link">${section.dataset.nav}</a>`);
-        //Appending the li elements to the ul
         navigation_list.appendChild(navigation_button);
         behavier_scroll(navigation_button, section);
     });
