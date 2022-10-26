@@ -37,7 +37,6 @@ function navigation_bar_func(){
         navigation_list.appendChild(navigation_button);
         behavier_scroll(navigation_button, section);
     });
-    navigation_bar.appendChild(navigation_list);
 }
 navigation_bar_func();
 
