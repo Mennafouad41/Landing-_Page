@@ -63,7 +63,7 @@ document.addEventListener("scroll", () => {
     });
 });
 
-//Make the active section's tab active in the navigation bar 
+//Make the active section's tab active in the navigation bar
 function ActiveNav(){
     window.addEventListener('scroll', function() {
 		const elements = document.getElementsByClassName('landing__container');		
@@ -71,18 +71,9 @@ function ActiveNav(){
 			const element_position = elements[i].getBoundingClientRect();
 			const pos = element_position.top;
 				if (pos <= window.innerHeight/2){
-					var activeNav = document.getElementsByClassName("your-active-class");
-					activeNav[0].className =activeNav[0].className.replace (" your-active-class", "");
-					elements[i].className += " your-active-class";
-			
-					var current = document.getElementsByClassName("active");  
-						if (current.length > 0) {
-							current[0].className = current[0].className.replace(" active", "");
-						}
-			
 					var links = document.getElementById("navbar__list").querySelectorAll('li');
 					links[i].className += " active";
-				};
+		};
 		};
 	}); 
 }
