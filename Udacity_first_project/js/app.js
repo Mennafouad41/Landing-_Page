@@ -37,13 +37,10 @@ function navigation_bar_func(){
         navigation_button.insertAdjacentHTML("afterbegin",`<a href="#${section.id}" class="menu__link">${section.dataset.nav}</a>`);
         //Appending the li elements to the ul
         navigation_list.appendChild(navigation_button);
-        //Calling behavier_scroll Function
         behavier_scroll(navigation_button, section);
     });
-    //Appending the ul to the navigation
     navigation_bar.appendChild(navigation_list);
 }
-//Building the navigation_bar Function 
 navigation_bar_func();
 
 
